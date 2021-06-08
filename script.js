@@ -4,31 +4,31 @@ $(document).ready(function(){
 
 $("#interestslink").click(function(){
 	$.when($(".stuff").fadeOut("slow")).done(function() {
-		window.location.href = "interests.html";
+		window.location.href = "/pages/interests.html";
 	});
 })
 
 $("#organizationslink").click(function(){
 	$.when($(".stuff").fadeOut("slow")).done(function() {
-		window.location.href = "organizations.html";
+		window.location.href = "/pages/organizations.html";
 	});
 })
 
 $("#homelink").click(function(){
 	$.when($("body").fadeOut("slow")).done(function() {
-		window.location.href = "index.html";
+		window.location.href = "/index.html";
 	});
 })
 
 $("#contactlink").click(function(){
 	$.when($(".stuff").fadeOut("slow")).done(function() {
-		window.location.href = "contact.html";
+		window.location.href = "/pages/contact.html";
 	});
 })
 
 $("#aboutlink").click(function(){
 	$.when($(".stuff").fadeOut("slow")).done(function() {
-		window.location.href = "about.html";
+		window.location.href = "/pages/about.html";
 	});
 })
 

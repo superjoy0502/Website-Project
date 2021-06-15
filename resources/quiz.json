@@ -1,0 +1,51 @@
+{
+	"quiz":
+	[
+		{
+			"question":"What is the team I first joined?",
+			"type":"MC",
+			"choices":["APPERZ", "LOGLINEZ", "Semicolon", "SZIP"],
+			"answer":"APPERZ"
+		},
+		{
+			"question":"What the language I used the most?",
+			"type":"MC",
+			"choices":["C#", "Python", "Java", "HTML"],
+			"answer":"C#"
+		},
+		{
+			"question":"Name one language I'm interested in.",
+			"type":"SA",
+			"answers":["Unity C#", "C#", "Python", "Java", "Kotlin", "HTML", "CSS", "JavaScript", "JS"]
+		},
+		{
+			"question":"What is my MBTI?",
+			"type":"MC",
+			"choices":["INTP", "ESFJ", "ENTP", "INFJ"],
+			"answer":"INTP"
+		},
+		{
+			"question":"Name one game I play.",
+			"type":"SA",
+			"answers":["Destiny 2", "D2", "Minecraft", "MC", "War Thunder", "WT", "Civilization V", "Civ", "Civ V", "Sid Meier's Civilization V", "EVE Online", "EVE", "Enlisted"]
+		},
+		{
+			"question":"When was I born?",
+			"type":"MC",
+			"choices":["2005", "2004", "2006", "2015"],
+			"answer":"2005"
+		},
+		{
+			"question":"Which of the following interests do I have more than 3 years of experience?",
+			"type":"MC",
+			"choices":["Unity", "Java", "Kotlin", "JavaScript"],
+			"answer":"Unity"
+		},
+		{
+			"question":"What is my position in Semicolon?",
+			"type":"MC",
+			"choices":["Game Developer", "Admin", "Sudo", "Sevice Developer"],
+			"answer":"Admin"
+		}
+	]
+}

@@ -22,7 +22,9 @@ body {
 #interests,
 #organizations,
 #about,
-#contact {
+#contact,
+#quiz,
+#start {
     margin-top: 100px;
     margin-left: 8px;
     margin-right: 8px;
@@ -71,15 +73,18 @@ button:hover {
     opacity: 0.7;
 }
 
+/* Make Links White instead of Blue */
 a {
     color: white;
 }
 
+/* More spacing for mini Titles */
 h3 {
     margin-top: 8px;
     margin-bottom: 8px;
 }
 
+/* Styles of the top Menu bar */
 #top {
     background: #ff7f50;
     box-shadow: -8px -8px 16px #994c30, 8px 8px 16px #ffb270;
@@ -95,6 +100,7 @@ h3 {
     cursor: pointer;
 }
 
+/* Seperating Line */
 hr {
     border: 2px solid white;
 }

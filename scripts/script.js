@@ -273,6 +273,7 @@ function checkQuiz() {
     let result = Math.round((count / questionsCorrect.length) * 100);
     endText.innerHTML = `Quiz Finished: ${result}%`;
     multipleChoice.readOnly = true;
+    $(".choiceEl").attr("disabled", true);
     textField.readOnly = true;
     quizEnd = true;
     pos = 0;

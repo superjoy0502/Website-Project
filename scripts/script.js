@@ -54,6 +54,7 @@ let multipleChoice = document.getElementById("MC");
 let questionText = document.getElementById("question");
 let endText = document.getElementById("endText");
 let textField = document.getElementById("textAnswer");
+let answerField = document.getElementById("answer");
 let buttons = document.getElementById("buttons");
 let nextButton = document.getElementById("next");
 let previousButton = document.getElementById("previous");
@@ -208,6 +209,13 @@ function updateUI() {
         }
     }
     questionText.innerHTML = quizGiven[pos].question;
+    if (quizEnd){
+        if (questionsCorrect[pos]){
+            answerField.style.border = "4px solid green";
+        } else {
+            answerField.style.border = "4px solid red";
+        }
+    }
 }
 
 function previousQuestion() {

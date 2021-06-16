@@ -1,65 +1,61 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Quiz | Dongwoo Kim</title>
-		<link rel="icon" href="/img/favicon.png">
-		<link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
-		<link href="/stylesheets/quiz.css" rel="stylesheet" type="text/css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	</head>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width" name="viewport"/>
+    <title>Quiz | Dongwoo Kim</title>
+    <link href="/img/favicon.png" rel="icon">
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css"/>
+    <link href="/stylesheets/quiz.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 
-	<body>
-		<div id="top" class="menu">
-			<h1 id="homelink">Dongwoo Kim</h1>
-			<div id="links">
-				<button id="aboutlink">About Me</button>
-				<button id="interestslink">My Interests</button>
-				<button id="organizationslink">Organizations</button>
-				<button id="contactlink">Contact Me</button>
-			</div>
-		</div>
-		<div class="stuff">
-			<div id="start">
-				<label for="questions">Questions Count (between 1 and 8):</label>
-				<h2 id="number">0</h2>
-				<input type="range" id="questions" name="questions" min="1" max="8" />
-				<button class="button" id="startButton">Start</button>
-			</div>
-		</div>
-		<div id="quizcontainer">
-			<div id="quiz">
-				<div>
-					<h2 id="question">Sample Question</h2>
-				</div>
-				<div id="answer">
-					<div>
-						<form id="MC">
-							<input type="radio" name="MultipleChoice" id="A" value="A">
-							<label for="A" id="AText">Sample</label><br>
-							<input type="radio" name="MultipleChoice" id="B" value="B">
-							<label for="B" id="BText">Sample</label><br>
-							<input type="radio" name="MultipleChoice" id="C" value="C">
-							<label for="C" id="CText">Sample</label><br>
-							<input type="radio" name="MultipleChoice" id="D" value="D">
-							<label for="D" id="DText">Sample</label>
-						</form>
-					</div>
-					<div>
-						<form id="SA" autocomplete="off">
-							<input type="text" id="textAnswer" name="textAnswer" autocomplete="off">
-						</form>
-					</div>
-				</div>
-				<div id="buttons">
-					<button id="previous" class="button">&laquo; Previous</button>
-					<button id="next" class="button">Next &raquo;</button>
-				</div>
-			</div>
-		</div>
-		<script src="/scripts/script.js"></script>
-	</body>
+<body>
+<div class="menu" id="top">
+    <h1 id="homelink">Dongwoo Kim</h1>
+    <div id="links">
+        <button id="aboutlink">About Me</button>
+        <button id="interestslink">My Interests</button>
+        <button id="organizationslink">Organizations</button>
+        <button id="contactlink">Contact Me</button>
+    </div>
+</div>
+<div class="stuff">
+    <div id="start">
+        <label for="questions">Questions Count (between 1 and 8):</label>
+        <h2 id="number">0</h2>
+        <input id="questions" max="8" min="1" name="questions" type="range"/>
+        <button class="button" id="startButton">Start</button>
+    </div>
+</div>
+<div id="quizcontainer">
+    <div id="quiz">
+        <div>
+            <h2 id="question">Sample Question</h2>
+        </div>
+        <div id="answer">
+            <form id="MC">
+                <input id="A" name="MultipleChoice" type="radio" value="A">
+                <label for="A" id="AText">Sample</label><br>
+                <input id="B" name="MultipleChoice" type="radio" value="B">
+                <label for="B" id="BText">Sample</label><br>
+                <input id="C" name="MultipleChoice" type="radio" value="C">
+                <label for="C" id="CText">Sample</label><br>
+                <input id="D" name="MultipleChoice" type="radio" value="D">
+                <label for="D" id="DText">Sample</label>
+            </form>
+            <form autocomplete="off" id="SA">
+                <input autocomplete="off" id="textAnswer" name="textAnswer" type="text">
+            </form>
+        </div>
+        <div id="buttons">
+            <button class="button" id="previous">&laquo; Previous</button>
+            <button class="button" id="next">Next &raquo;</button>
+        </div>
+    </div>
+</div>
+<script src="/scripts/script.js"></script>
+</body>
 
 </html>

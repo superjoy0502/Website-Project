@@ -214,7 +214,7 @@ function previousQuestion() {
     if (currentQuestion.type == "MC") {
         answers[pos] = $(
             "input[name='MultipleChoice']:checked",
-            "#mcForm"
+            "#MC"
         ).val();
     } else if (currentQuestion.type == "SA") {
         answers[pos] = textField.value;
@@ -228,7 +228,7 @@ function nextQuestion() {
         if (currentQuestion.type == "MC") {
             answers[pos] = $(
                 "input[name='MultipleChoice']:checked",
-                "#mcForm"
+                "#MC"
             ).val();
         } else if (currentQuestion.type == "SA") {
             answers[pos] = textField.value;

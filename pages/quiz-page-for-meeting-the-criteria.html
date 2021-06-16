@@ -32,22 +32,27 @@
 <div id="quizcontainer">
     <div id="quiz">
         <div>
+			<h2 id="endText"></h2>
             <h2 id="question">Sample Question</h2>
         </div>
         <div id="answer">
-            <form id="MC">
-                <input id="A" name="MultipleChoice" type="radio" value="A">
-                <label for="A" id="AText">Sample</label><br>
-                <input id="B" name="MultipleChoice" type="radio" value="B">
-                <label for="B" id="BText">Sample</label><br>
-                <input id="C" name="MultipleChoice" type="radio" value="C">
-                <label for="C" id="CText">Sample</label><br>
-                <input id="D" name="MultipleChoice" type="radio" value="D">
-                <label for="D" id="DText">Sample</label>
-            </form>
-            <form autocomplete="off" id="SA">
-                <input autocomplete="off" id="textAnswer" name="textAnswer" type="text">
-            </form>
+			<div>
+            	<form id="MC">
+                	<input id="A" name="MultipleChoice" type="radio" value="A">
+                	<label for="A" id="AText">Sample</label><br>
+                	<input id="B" name="MultipleChoice" type="radio" value="B">
+                	<label for="B" id="BText">Sample</label><br>
+                	<input id="C" name="MultipleChoice" type="radio" value="C">
+                	<label for="C" id="CText">Sample</label><br>
+                	<input id="D" name="MultipleChoice" type="radio" value="D">
+                	<label for="D" id="DText">Sample</label>
+            	</form>
+			</div>
+			<div>
+            	<form autocomplete="off" id="SA">
+                	<input autocomplete="off" id="textAnswer" name="textAnswer" type="text">
+            	</form>
+			</div>
         </div>
         <div id="buttons">
             <button class="button" id="previous">&laquo; Previous</button>

@@ -52,6 +52,7 @@ let slider = document.getElementById("questions");
 let shortAnswer = document.getElementById("SA");
 let multipleChoice = document.getElementById("MC");
 let questionText = document.getElementById("question");
+let endText = document.getElementById("endText");
 let textField = document.getElementById("textAnswer");
 let buttons = document.getElementById("buttons");
 let nextButton = document.getElementById("next");
@@ -270,7 +271,7 @@ function checkQuiz() {
         if (questionsCorrect[i] == true) count++;
     }
     let result = Math.round((count / questionsCorrect.length) * 100);
-    questionText.innerHTML = `Quiz Finished: ${result}%`;
+    endText.innerHTML = `Quiz Finished: ${result}%`;
     multipleChoice.readOnly = true;
     textField.readOnly = true;
     quizEnd = true;

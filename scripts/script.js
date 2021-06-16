@@ -239,7 +239,11 @@ function nextQuestion() {
     choices = [];
     currentQuestion = quizGiven[pos];
     if (pos == quizGiven.length) {
-        checkQuiz();
+        if (quizEnd) {
+            pos--;
+        } else {
+            checkQuiz();
+        }
         return;
     }
     questionText.innerHTML = currentQuestion.question;

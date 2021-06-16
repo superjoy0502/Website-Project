@@ -68,6 +68,7 @@ let currentQuestion;
 let pos = -1;
 let answers = [];
 let questionsCorrect = [];
+let quizEnd = false;
 
 function updateText() {
 	questionNum = slider.value;
@@ -261,6 +262,9 @@ function checkQuiz() {
 	}
 	let result = Math.round((count / questionsCorrect.length) * 100);
 	questionText.innerHTML = `Quiz Finished: ${result}%`;
+	document.getElementById("mcForm").readOnly = true;
+	document.getElementById("textAnswer").readOnly = true;
+	quizEnd = true;
 }
 
 let coll = document.getElementsByClassName("collapsible");

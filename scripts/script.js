@@ -273,6 +273,7 @@ function checkQuiz() {
             }
         } else if (typeof correctAnswers[i] == "object") {
             if (correctAnswers[i].includes(answers[i].toLowerCase())) {
+                console.log(answers[i].toLowerCase());
                 questionsCorrect.push(true);
             } else {
                 questionsCorrect.push(false);

@@ -229,6 +229,7 @@ function previousQuestion() {
         answers[pos] = textField.value;
     }
     pos--;
+    currentQuestion = quizGiven[pos];
     updateUI();
 }
 

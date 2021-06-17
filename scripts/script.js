@@ -235,7 +235,6 @@ function previousQuestion() {
 }
 
 function nextQuestion() {
-    currentQuestion = quizGiven[pos];
     if (pos == quizGiven.length) {
         if (quizEnd) {
             pos--;
@@ -257,10 +256,7 @@ function nextQuestion() {
         }
     }
     pos++;
-    currentQuestion = quizGiven[pos];
     console.log(pos);
-    choices = [];
-    questionText.innerHTML = currentQuestion.question;
     updateUI();
 }
 //endregion

@@ -159,7 +159,6 @@ function loadQuiz(json) {
                 );
         }
     }
-    console.log(quizGiven);
     nextQuestion();
     $("#quizcontainer").fadeIn("slow");
 }
@@ -236,7 +235,6 @@ function previousQuestion() {
     }
     pos--;
     currentQuestion = quizGiven[pos];
-    console.log(pos);
     updateUI();
 }
 
@@ -252,14 +250,11 @@ function nextQuestion() {
         }
     }
     pos++;
-    console.log(pos);
     if (pos == quizGiven.length) {
         if (quizEnd) {
             pos--;
-            console.log("quizEnd");
         } else {
             checkQuiz();
-            console.log("checkQuiz");
         }
         return;
     } else {
@@ -279,7 +274,6 @@ function checkQuiz() {
             }
         } else if (typeof correctAnswers[i] == "object") {
             if (correctAnswers[i].includes(answers[i].toLowerCase())) {
-                console.log(answers[i].toLowerCase());
                 questionsCorrect.push(true);
             } else {
                 questionsCorrect.push(false);

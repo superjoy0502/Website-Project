@@ -246,6 +246,7 @@ function nextQuestion() {
         }
     }
     pos++;
+    console.log(pos)
     if (pos == quizGiven.length) {
         if (quizEnd) {
             pos--;

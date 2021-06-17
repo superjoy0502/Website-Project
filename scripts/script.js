@@ -230,6 +230,7 @@ function previousQuestion() {
     }
     pos--;
     currentQuestion = quizGiven[pos];
+    console.log(pos);
     updateUI();
 }
 
@@ -247,6 +248,7 @@ function nextQuestion() {
     pos++;
     choices = [];
     currentQuestion = quizGiven[pos];
+    console.log(pos);
     if (pos == quizGiven.length) {
         if (quizEnd) {
             pos--;

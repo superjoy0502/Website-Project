@@ -33,6 +33,12 @@ $("#aboutlink").click(function () {
     });
 });
 
+$("#quizlink").click(function () {
+    $.when($(".stuff").fadeOut("slow")).done(function () {
+        window.location.href = "/pages/quiz-page-for-meeting-the-criteria.html";
+    });
+});
+
 $("#startButton").click(function () {
     $.when($(".stuff").fadeOut("slow")).done(function () {
         fetch("/resources/quiz.json", {

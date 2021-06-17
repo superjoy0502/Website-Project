@@ -272,7 +272,7 @@ function checkQuiz() {
                 questionsCorrect.push(false);
             }
         } else if (typeof correctAnswers[i] == "object") {
-            if (correctAnswers[i].includes(answers[i])) {
+            if (correctAnswers[i].includes(answers[i].toLowerCase())) {
                 questionsCorrect.push(true);
             } else {
                 questionsCorrect.push(false);
@@ -285,8 +285,22 @@ function checkQuiz() {
     for (let i = 0; i < questionsCorrect.length; ++i) {
         if (questionsCorrect[i] == true) count++;
     }
+    let message;
     let result = Math.round((count / questionsCorrect.length) * 100);
-    endText.innerHTML = `Quiz Finished: ${result}%`;
+    if (result < 20){
+        message = "I wrote 300 lines of JavaScript making this and how to you dare get this SCORE??";
+    } else if (result < 40){
+        message = "Please. You know my mom will get disappointed if she knows that not many people doesn't know about me.";
+    } else if (result < 60){
+        message = "Meh. You finished the test.";
+    } else if (result < 80){
+        message = "Congrats. You finished the test!";
+    } else if (result < 90){
+        message = "Thank you for recognizing my identity :)";
+    } else {
+        message = "Is finding out someone to the most secrets your hobby? Nice.";
+    }
+    endText.innerHTML = `${message}: ${count}/${questionsCorrect.length} (${result}%)`;
     multipleChoice.readOnly = true;
     $(".choiceEl").attr("disabled", true);
     textField.readOnly = true;

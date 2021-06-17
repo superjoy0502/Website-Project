@@ -16,7 +16,7 @@
 		{
 			"question":"Name one language I'm interested in.",
 			"type":"SA",
-			"answers":["Unity C#", "C#", "Python", "Java", "Kotlin", "HTML", "CSS", "JavaScript", "JS"]
+			"answers":["unity c#", "c#", "python", "java", "kotlin", "html", "css", "javascript", "js"]
 		},
 		{
 			"question":"What is my MBTI?",
@@ -27,7 +27,7 @@
 		{
 			"question":"Name one game I play.",
 			"type":"SA",
-			"answers":["Destiny 2", "D2", "Minecraft", "MC", "War Thunder", "WT", "Civilization V", "Civ", "Civ V", "Sid Meier's Civilization V", "EVE Online", "EVE", "Enlisted"]
+			"answers":["destiny 2", "d2", "minecraft", "mc", "war thunder", "wt", "civilization v", "civ", "civ v", "sid meier's civilization v", "eve online", "eve", "enlisted"]
 		},
 		{
 			"question":"When was I born?",

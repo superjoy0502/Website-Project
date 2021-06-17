@@ -165,7 +165,7 @@ function updateUI() {
     $("input").val("");
     currentQuestion = quizGiven[pos];
     if (currentQuestion.type == "MC") {
-        multipleChoice.style.display = "inline";
+        multipleChoice.style.display = "block";
         shortAnswer.style.display = "none";
         a.value = choicesData[pos][0];
         b.value = choicesData[pos][1];

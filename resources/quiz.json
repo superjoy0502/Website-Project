@@ -16,7 +16,7 @@
 		{
 			"question":"Name one language I'm interested in.",
 			"type":"SA",
-			"answers":["unity c#", "c#", "python", "java", "kotlin", "html", "css", "javascript", "js"]
+			"answers":["unity c#", "c#", "python", "py", "java", "kotlin", "html", "css", "javascript", "js"]
 		},
 		{
 			"question":"What is my MBTI?",

@@ -235,6 +235,17 @@ function previousQuestion() {
 }
 
 function nextQuestion() {
+    currentQuestion = quizGiven[pos];
+    if (pos == quizGiven.length) {
+        if (quizEnd) {
+            pos--;
+            console.log("quizEnd");
+        } else {
+            checkQuiz();
+            console.log("checkQuiz");
+        }
+        return;
+    }
     if (pos !== -1) {
         if (currentQuestion.type == "MC") {
             answers[pos] = $(
@@ -246,19 +257,8 @@ function nextQuestion() {
         }
     }
     pos++;
-    console.log(pos)
-    if (pos == quizGiven.length) {
-        if (quizEnd) {
-            pos--;
-            console.log("quizEnd");
-        } else {
-            checkQuiz();
-            console.log("checkQuiz");
-        }
-        return;
-    }
+    console.log(pos);
     choices = [];
-    currentQuestion = quizGiven[pos];
     questionText.innerHTML = currentQuestion.question;
     updateUI();
 }

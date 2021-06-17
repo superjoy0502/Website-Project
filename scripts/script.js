@@ -235,16 +235,6 @@ function previousQuestion() {
 }
 
 function nextQuestion() {
-    if (pos == quizGiven.length) {
-        if (quizEnd) {
-            pos--;
-            console.log("quizEnd");
-        } else {
-            checkQuiz();
-            console.log("checkQuiz");
-        }
-        return;
-    }
     if (pos !== -1) {
         if (currentQuestion.type == "MC") {
             answers[pos] = $(
@@ -257,7 +247,18 @@ function nextQuestion() {
     }
     pos++;
     console.log(pos);
-    updateUI();
+    if (pos == quizGiven.length) {
+        if (quizEnd) {
+            pos--;
+            console.log("quizEnd");
+        } else {
+            checkQuiz();
+            console.log("checkQuiz");
+        }
+        return;
+    } else {
+        updateUI();
+    }
 }
 //endregion
 

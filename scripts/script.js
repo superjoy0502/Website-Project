@@ -291,15 +291,15 @@ function checkQuiz() {
     if (result < 20){
         message = "I wrote 300 lines of JavaScript making this and how to you dare get this SCORE??";
     } else if (result < 40){
-        message = "Please. You know my mom will get disappointed if she knows that not many people doesn't know about me.";
+        message = "Writing a whole page about me wasn't really helpful";
     } else if (result < 60){
-        message = "Meh. You finished the test.";
+        message = "Better next time please";
     } else if (result < 80){
-        message = "Congrats. You finished the test!";
+        message = "Congrats";
     } else if (result < 90){
-        message = "Thank you for recognizing my identity :)";
+        message = "Thank you";
     } else {
-        message = "Is finding out someone to the most secrets your hobby? Nice.";
+        message = "A 100? Congratulations";
     }
     endText.innerHTML = `${message}: ${count}/${questionsCorrect.length} (${result}%)`;
     multipleChoice.readOnly = true;

@@ -245,15 +245,17 @@ function nextQuestion() {
             answers[pos] = textField.value;
         }
     }
+    pos++;
     if (pos == quizGiven.length) {
         if (quizEnd) {
             pos--;
+            console.log("quizEnd");
         } else {
             checkQuiz();
+            console.log("checkQuiz");
         }
         return;
     }
-    pos++;
     choices = [];
     currentQuestion = quizGiven[pos];
     questionText.innerHTML = currentQuestion.question;

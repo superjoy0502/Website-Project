@@ -245,10 +245,6 @@ function nextQuestion() {
             answers[pos] = textField.value;
         }
     }
-    pos++;
-    choices = [];
-    currentQuestion = quizGiven[pos];
-    console.log(pos);
     if (pos == quizGiven.length) {
         if (quizEnd) {
             pos--;
@@ -257,6 +253,9 @@ function nextQuestion() {
         }
         return;
     }
+    pos++;
+    choices = [];
+    currentQuestion = quizGiven[pos];
     questionText.innerHTML = currentQuestion.question;
     updateUI();
 }

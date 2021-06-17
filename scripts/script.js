@@ -257,6 +257,7 @@ function nextQuestion() {
         }
     }
     pos++;
+    currentQuestion = quizGiven[pos];
     console.log(pos);
     choices = [];
     questionText.innerHTML = currentQuestion.question;

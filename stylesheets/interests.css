@@ -1,57 +1,57 @@
 /* CSS Flexbox Styles */
 .container {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
-	align-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
 }
 
 .item {
-	flex-grow: 1;
+    flex-grow: 1;
 }
 
 .lang {
-	position: relative;
-	text-align: center;
-	color: white;
-	border-radius: 24px;
-	background: #ff7f50;
-	box-shadow: -8px -8px 16px #994c30, 8px 8px 16px #ffb270;
-	padding: 4px;
-	width: 256px;
-	border: none;
-	outline: none;
-	font-size: 18px;
-	height: 256px;
-	margin: 32px;
-	transition: 0.5s;
+    position: relative;
+    text-align: center;
+    color: white;
+    border-radius: 24px;
+    background: #ff7f50;
+    box-shadow: -8px -8px 16px #994c30, 8px 8px 16px #ffb270;
+    padding: 4px;
+    width: 256px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    height: 256px;
+    margin: 32px;
+    transition: 0.5s;
 }
 
 /* Effects on Hover */
 .lang:hover .content {
-	opacity: 1;
+    opacity: 1;
 }
 
 .lang:hover {
-	background: #663320;
+    background: #663320;
 }
 
 .lang img {
-	width: 24px;
-	vertical-align: middle;
+    width: 24px;
+    vertical-align: middle;
 }
 
 .content {
-	opacity: 0;
-	transition: 0.5s;
-	padding: 18px;
+    opacity: 0;
+    transition: 0.5s;
+    padding: 18px;
 }
 
 /* Centering the texts */
 .content p {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
 }

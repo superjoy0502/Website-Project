@@ -1,55 +1,55 @@
 /* Collapsible Style by W3Schools */
 .collapsible {
-	border-radius: 14px;
-	background: #ff7f50;
-	box-shadow: -5px -5px 14px #e67248;
-	color: white;
-	cursor: pointer;
-	padding: 18px;
-	width: 100%;
-	border: none;
-	text-align: left;
-	outline: none;
-	font-size: 15px;
+    border-radius: 14px;
+    background: #ff7f50;
+    box-shadow: -5px -5px 14px #e67248;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
 }
 
 .collapsible:after {
-	content: '\002B';
-	color: white;
-	font-weight: bold;
-	float: right;
-	margin-left: 5px;
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
 }
 
 .active:after {
-	content: "\2212";
+    content: "\2212";
 }
 
 .colcontent {
-	border-radius: 14px;
-	padding: 0 18px;
-	max-height: 0;
-	margin-bottom: 16px;
-	overflow: hidden;
-	transition: max-height 0.2s ease-out;
-	background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 14px;
+    padding: 0 18px;
+    max-height: 0;
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Images size limit */
 .team img {
-	height: 64px;
+    height: 64px;
 }
 
 /* Semicolon box customizing */
 .smcolon {
-	display: flex;
+    display: flex;
 }
 
 .smcolon div {
-	padding-right: 18px;
+    padding-right: 18px;
 }
 
 .smcolon iframe {
-	padding-top: 18px;
-	padding-bottom: 18px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
